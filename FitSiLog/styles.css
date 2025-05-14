@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+
+
+footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+}
+
+
+.hero-signup {
+    background: url('images/signup-hero.jpg') no-repeat center center/cover;
+    min-height: 60vh;
+    position: relative;
+    z-index: 1;
+}
+
+.hero-signup::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+}
+
+.hero-signup .container {
+    position: relative;
+    z-index: 2;
+}
+
+.img-fluid {
+    width: 100% !important;
+    height: auto;
+}
+
+.card {
+    border: 0;
+    box-shadow: none;
+}
+
+.img-fluid.rounded {
+    border-radius: 0.5rem;
+}
+
+.card-body {
+    padding: 2rem;
+}
+
+.carousel-img {
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.py-5.bg-dark.text-light {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-color: #343a40;
+    color: white;
+}
+
+.carousel-inner .carousel-item {
+    transition: transform 0.6s ease;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: black;
+}
+
+.card-body {
+    padding: 2rem;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #333;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #007bff;
+}
+
+
+.trainer-img {
+    max-width: 150px; 
+    height: 150px;     
+    border-radius: 50%; 
+    margin: 0 auto;  
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        height: auto;
+        padding: 3rem 1rem;
+        text-align: center;
+    }
+
+    .caption-glass {
+        padding: 1.5rem;
+        max-width: 100%;
+    }
+
+    .hero-signup {
+        min-height: 40vh;
+    }
+
+    .form-section .row {
+        flex-direction: column;
+    }
+
+    .form-section .col-md-6 {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .carousel-caption h1 {
+        font-size: 1.8rem;
+    }
+
+    .carousel-caption p {
+        font-size: 1rem;
+    }
+
+    .carousel-item img {
+        object-fit: cover;
+        height: 300px;
+    }
+
+    .navbar-nav {
+        text-align: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .caption-glass h1 {
+        font-size: 1.5rem;
+    }
+
+    .caption-glass p {
+        font-size: 0.95rem;
+    }
+
+    .btn {
+        font-size: 0.9rem;
+        padding: 0.5rem 1rem;
+    }
+
+    .img-fluid.rounded-circle {
+        width: 100px;
+        height: 100px;
+    }
+
+    footer {
+        text-align: center;
+        font-size: 0.9rem;
+    }
+}
+
+.btn {
+    font-weight: 600;
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    border-radius: 0.4rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.btn-primary {
+    background-color: #5995d4ee;
+    border: none;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    box-shadow: 0 6px 12px rgba(0, 91, 187, 0.3);
+}
+
+.btn-info {
+    background-color: #17a2b8;
+    border: none;
+    color: #fff;
+}
+
+.btn-info:hover {
+    background-color: #117a8b;
+    box-shadow: 0 6px 12px rgba(23, 162, 184, 0.3);
+}
+
+.btn:focus {
+    outline: 3px solid rgba(0, 123, 255, 0.5);
+    outline-offset: 2px;
+}
+
+
+.carousel-caption .btn {
+    opacity: 0.85;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.carousel-caption .btn:hover {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+
+footer i {
+  transition: transform 0.3s ease;
+}
+
+footer i:hover {
+  transform: scale(1.2);
+  color: #0dcaf0;
+}
+
+@media (max-width: 768px) {
+  .social-icons {
+    display: flex;
+    justify-content: center;
+  }
+
+  hr {
+    align-self: center;
+  }
+}
